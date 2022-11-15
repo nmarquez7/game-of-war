@@ -25,6 +25,6 @@ html, * {
   }
   
   button:hover {
-    background-color: grey;
+    background-color: rgb(224, 181, 102);
     color: white;
   }
