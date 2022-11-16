@@ -127,6 +127,15 @@
 .card.♥J {
   background-image: url("../csscards/css-card-images/hearts/hearts-J.svg"); }
 
+  .card.hearts.card.clubs.r10,
+  .card.h10,
+  .card.♥10 {
+    background-image: url("../csscards/css-card-images/hearts/hearts-r10.svg"); }
+
+
+
+
+
 
 .card.hearts.r09,
 .card.h09,
@@ -236,7 +245,7 @@
 .card.clubs.A,
 .card.cA,
 .card.♣A {
-  background-image: url("../csscards/css-card-images/clubs/"); }
+  background-image: url("../csscards/css-card-images/clubs/clubs-A.svg"); }
 
 .card.clubs.K,
 .card.cK,

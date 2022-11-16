@@ -38,14 +38,14 @@ function renderNewShuffledDeck() {
 function renderDeckInContainer(deck, container) {
   container.innerHTML = '';
   // Let's build the cards as a string of HTML
-  let cardsHtml = '';
-  deck.forEach(function(card) {
-    cardsHtml += `<div class="card ${card.face}"></div>`;
-  });
+  // let cardsHtml = '';
+  // deck.forEach(function(card) {
+  //   cardsHtml += `<div class="card ${card.face}"></div>`;
+  // });
   // Or, use reduce to 'reduce' the array into a single thing - in this case a string of HTML markup 
-  // const cardsHtml = deck.reduce(function(html, card) {
-  //   return html + `<div class="card ${card.face}"></div>`;
-  // }, '');
+  const cardsHtml = deck.reduce(function(html, card) {
+    return html + `<div class="card ${card.face}"></div>`;
+  }, '');
   container.innerHTML = cardsHtml;
 }
 
