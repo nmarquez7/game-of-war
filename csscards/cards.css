@@ -133,11 +133,7 @@
     background-image: url("../csscards/css-card-images/hearts/hearts-r10.svg"); }
 
 
-
-
-
-
-.card.hearts.r09,
+    .card.hearts.r09,
 .card.h09,
 .card.♥09 {
   background-image: url("../csscards/css-card-images/hearts/hearts-r09.svg"); }
@@ -319,36 +315,41 @@
 .card.back {
   background-image: url("../images/backs/blue.svg"); }
 
-.card.back-blue {
-  background-image: url("../images/backs/blue.svg"); }
-
 .card.back-red {
-  background-image: url("../csscards/css-card-images/backs/download.svg"); }
+  background-image: url("../csscards/css-card-images/backs/red-back.svg") }
+
+  h1 {
+    color: #c3c3c3;
+    align-items: center;
+    
+  }
+
+
 
 /* Re-orients the cards for different directions. While
    they are symmetric, it's still important to orient
    them correctly in case text or other symbols are
    layered on them with CSS pseudo-selectors, new
    classes/rules, etc. */
-.card.west,
+/* .card.west,
 .card.W {
   transform: rotate(90deg);
   margin: auto 0.75em; }
   .card.west.shadow,
   .card.W.shadow {
-    box-shadow: 2px -2px 3px 0 rgba(41, 41, 41, 0.75); }
+    box-shadow: 2px -2px 3px 0 rgba(41, 41, 41, 0.75); } */
 
-.card.north,
+/* .card.north,
 .card.N {
   transform: rotate(180deg); }
   .card.north.shadow,
   .card.N.shadow {
-    box-shadow: -2px -2px 3px 0 rgba(41, 41, 41, 0.75); }
+    box-shadow: -2px -2px 3px 0 rgba(41, 41, 41, 0.75); } */
 
-.card.east,
+/* .card.east,
 .card.E {
   transform: rotate(270deg);
   margin: auto 0.75em; }
   .card.east.shadow,
   .card.E.shadow {
-    box-shadow: -2px 2px 3px 0 rgba(41, 41, 41, 0.75); }
+    box-shadow: -2px 2px 3px 0 rgba(41, 41, 41, 0.75); } */

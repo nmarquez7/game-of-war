@@ -4,16 +4,23 @@ const ranks = ['02', '03', '04', '05', '06', '07', '08', '09', '10', 'J', 'Q', '
 
 // Build a 'master' deck of 'card' objects used to create shuffled decks
 const masterDeck = buildMasterDeck();
-renderDeckInContainer(masterDeck, document.getElementById('master-deck-container'));
+
+//Displays Master Deck on DOM
+// renderDeckInContainer(masterDeck, document.getElementById('master-deck-container'));
 
 /*----- app's state (variables) -----*/
 let shuffledDeck;
-
+let rounds = 5;
+let player1;
+let player2;
 /*----- cached element references -----*/
 const shuffledContainer = document.getElementById('shuffled-deck-container');
 
+
 /*----- event listeners -----*/
 document.querySelector('button').addEventListener('click', renderNewShuffledDeck);
+document.querySelector('.cardBack1').addEventListener('click', drawNewCard);
+
 
 /*----- functions -----*/
 function getNewShuffledDeck() {
@@ -29,10 +36,15 @@ function getNewShuffledDeck() {
   return newShuffledDeck;
 }
 
+function drawNewCard() {
+console.log()
+
+}
+
 function renderNewShuffledDeck() {
   // Create a copy of the masterDeck (leave masterDeck untouched!)
-  shuffledDeck = getNewShuffledDeck();
-  renderDeckInContainer(shuffledDeck, shuffledContainer);
+  // shuffledDeck = getNewShuffledDeck();
+  // renderDeckInContainer(shuffledDeck, shuffledContainer);
 }
 
 function renderDeckInContainer(deck, container) {
@@ -65,4 +77,26 @@ function buildMasterDeck() {
   return deck;
 }
 
+
+
 renderNewShuffledDeck();
+
+
+//Game function that runs game in the beginning of game
+// function startGame() {
+
+// }
+
+//One player function (apply DOM query (html))
+const deckEl = document.querySelector('cardBack1');
+console.log(deckEl, 'It Worked!')
+//One AI function
+
+//Make conditional statement for round increments */
+function changeRound(){
+  rounds = rounds -1
+return rounds
+}
+changeRound()
+console.log(rounds, " <- rounds");
+//Function where players card is compared to AI card (If statement)

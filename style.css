@@ -1,68 +1,69 @@
 body {
-  background-color: #100e17;
+  background-color: #141415;
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+/* .container {
   position: absolute;
   height: 300px;
   width: 600px;
   top: 60px;
   left: calc(50% - 300px);
   display: flex;
-}
+} */
 
 .card {
-  display: flex;
+  /* display: flex;
   height: 280px;
   width: 200px;
   background-color: #fff8e8;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
+  box-shadow: -1rem 0 3rem #000; */
+  /* margin-left: -50px; */
+  /* Adjusts Reset Cards Parameters */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
 }
 
-.card:not(:first-child) {
+/* .card:not(:first-child) {
     scroll-margin-inline-end: -50px;
-}
+} */
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
-}
+} */
 
-.card:hover ~ .card {
+/* .card:hover ~ .card {
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
-}
+} */
 
-.title {
+/* .title {
   color: white;
   font-weight: 300;
   position: absolute;
   left: 20px;
   top: 15px;
-}
+} */
 
-.bar {
+/* .bar {
   position: absolute;
   top: 100px;
   left: 20px;
   height: 5px;
   width: 150px;
-}
+} */
 
-.emptybar {
+/* .emptybar {
   background-color: #2e3033;
   width: 100%;
   height: 100%;
-}
+} */
 
-.filledbar {
+/* .filledbar {
   position: absolute;
   top: 0px;
   z-index: 3;
@@ -71,35 +72,36 @@ body {
   background: rgb(0,154,217);
   background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
   transition: 0.6s ease-out;
-}
+} */
 
-.card:hover .filledbar {
+/* .card:hover .filledbar {
   width: 120px;
   transition: 0.4s ease-out;
-}
+} */
 
-.circle {
+/* .circle {
   position: absolute;
   top: 150px;
   left: calc(50% - 60px);
-}
+} */
 
-.stroke {
+/* .stroke {
   stroke: white;
   stroke-dasharray: 360;
   stroke-dashoffset: 360;
   transition: 0.6s ease-out;
-}
+} */
 
-svg {
+/* svg {
   fill: #17141d;
   stroke-width: 2px;
-}
+} */
 
-.card:hover .stroke {
+/* .card:hover .stroke {
   stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
+  transition: 0.6s ease-out; */
+/* } */
+/* Adjusts Button Layout Parameters */
   button {
     display: block;
     margin: 10px auto;
@@ -110,8 +112,9 @@ svg {
     border-radius: 4px;
     outline: none;
   }
-  
+  /* Allows Reset Cards Button to Change Color When Hovered Over */
   button:hover {
     background-color: rgb(1, 9, 15);
     color: rgb(224, 181, 102);
   }
+
